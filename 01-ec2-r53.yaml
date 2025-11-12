@@ -37,7 +37,7 @@
 
     - name: create r53
       amazon.aws.route53
-        state : present
+        state: present
         zone: "{{ domain_name }}"
         record: "{{ item.item }},{{ item.item }}"
         type: A
