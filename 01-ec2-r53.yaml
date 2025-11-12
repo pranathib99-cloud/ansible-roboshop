@@ -1,6 +1,6 @@
 - name: creat ec2 and r53
   hosts: localhost
-  connection: local
+  connection: localhost
   vars:
     ami_id: ami-09c813fb71547fc4f
     sg_id: sg-0b5711d20e4247352
