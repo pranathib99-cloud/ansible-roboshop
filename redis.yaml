@@ -31,7 +31,7 @@
 
   - name: start and enable redis
     ansible.builtin.service:
-     name: radise
+     name: radis
      enabled: yes
      state: present
      
