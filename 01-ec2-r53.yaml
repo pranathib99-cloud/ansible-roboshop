@@ -8,7 +8,7 @@
     domain_name: zyna.space
     instances:
       - mongodb
-      - radis
+      - redis
       # - mysql
       # - rabbitmq
   tasks:
