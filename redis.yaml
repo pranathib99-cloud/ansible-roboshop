@@ -33,6 +33,6 @@
     ansible.builtin.service:
      name: radis
      enabled: yes
-     state: present
+     state: started
      
     
