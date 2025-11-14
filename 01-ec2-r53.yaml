@@ -9,8 +9,8 @@
     instances:
       - mongodb
       - radis
-      - mysql
-      - rabbitmq
+      # - mysql
+      # - rabbitmq
   tasks:
     - name: creat ec2 instance
       amazon.aws.ec2_instance:
