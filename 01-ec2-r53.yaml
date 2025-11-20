@@ -16,6 +16,10 @@
       - shipping
       - catalogue 
       - frontend
+      - cart
+      - dispatch
+      - 
+
   tasks:
     - name: creat ec2 instance
       amazon.aws.ec2_instance:
