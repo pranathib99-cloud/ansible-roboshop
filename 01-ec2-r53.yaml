@@ -8,17 +8,16 @@
     domain_name: zyna.space
     instances:
       - mongodb
-      - redis
-      - mysql
-      - rabbitmq
-      - payment
-      - user
-      - shipping
+      # - redis
+      # - mysql
+      # - rabbitmq
+      # - payment
+      # - user
+      # - shipping
       - catalogue 
-      - frontend
-      - cart
-      - dispatch
-      - 
+      # - frontend
+      # - cart
+      # - dispatch
 
   tasks:
     - name: creat ec2 instance
