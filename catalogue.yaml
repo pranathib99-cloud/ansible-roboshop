@@ -58,18 +58,21 @@
       name: mongodb-mongosh
       state: present
 
-  # - name: conecting to mongodb
-  #   ansible.builtin.command: $(mongosh mongodb.daws86s.fun --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')")
-  #   register: catalogue_output
-
-  - name: evaluuate catalogue db
-    community.mongodb.mongodb_shell:
-      login_host: mongodb.zyna
-      eval: "db.getMongo().getDBNames().indexOf('catalogue')"
+  - name: conecting to mongodb
+    ansible.builtin.command: $(mongosh mongodb.zyna.space --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')")
     register: catalogue_output
+
+  # - name: evaluuate catalogue db
+  #   community.mongodb.mongodb_shell:
+  #     login_host: mongodb.zyna
+  #     eval: "db.getMongo().getDBNames().indexOf('catalogue')"
+  #   register: catalogue_output
      
 
 
   - name: print catalogue db output
     ansible.builtin.debug:
       msg: "{{catalogue_output}}"
+
+  - name: load products into mongodb
+    ansible.builtin.shell: mongosh --host mongodb.zyna.psace </app/db/master-data.js
