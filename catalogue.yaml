@@ -59,7 +59,7 @@
       state: present
 
   - name: conecting to mongodb
-    ansible.builtin.command: $(mongosh mongodb.zyna.space --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')")
+    ansible.builtin.command: mongosh mongodb.zyna.space --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')")
     register: catalogue_output
 
   # - name: evaluuate catalogue db
