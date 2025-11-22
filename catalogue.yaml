@@ -76,3 +76,7 @@
 
   # - name: load products into mongodb
   #   ansible.builtin.shell: mongosh --host mongodb.zyna.psace </app/db/master-data.js
+
+  SECTION 07-october- section 25
+  1hr :20  am stuck duce to api issue and aws as not accessiblefor free tier
+  
