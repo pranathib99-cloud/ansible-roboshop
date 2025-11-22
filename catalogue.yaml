@@ -74,5 +74,5 @@
     ansible.builtin.debug:
       msg: "{{catalogue_output}}"
 
-  - name: load products into mongodb
-    ansible.builtin.shell: mongosh --host mongodb.zyna.psace </app/db/master-data.js
+  # - name: load products into mongodb
+  #   ansible.builtin.shell: mongosh --host mongodb.zyna.psace </app/db/master-data.js
